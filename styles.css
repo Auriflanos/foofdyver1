@@ -183,7 +183,7 @@ body .text{
 .modal .fullscreen-modal {
     color: white;
     position: absolute;
-    right: 8px;
+    left: 8px;
     top: 8px;
     cursor: pointer;
 }
