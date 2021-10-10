@@ -13,9 +13,11 @@ fullscreen.addEventListener('click', function (){
 
 for (let card of cards){
     card.addEventListener("click", function(){
-        const modalId = card.getAttribute("id")
+        const modalId = card.getAttribute('id')
         modalOverlay.classList.add('active')
-        modalOverlay.querySelector("iframe").src = `/${modalId}.html`
+        modalOverlay.querySelector("iframe").src = `/modal/${modalId}.html`
+        //        modalOverlay.querySelector("iframe").src = `/${modalId}.html`
+
     })
 }
 

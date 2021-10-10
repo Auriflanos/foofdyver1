@@ -153,7 +153,7 @@ body .text{
 }
 
 
-/* === MODAL CLOSE === */
+/* === MODAL === */
 .modal-overlay{
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
@@ -165,7 +165,7 @@ body .text{
 }
 
 .modal {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 251, 251, 0.877);
     width: 90%;
     height: 90%;
     margin: 5vh auto;
@@ -173,7 +173,7 @@ body .text{
 }
 
 .modal .close-modal {
-    color: white;
+    color: black;
     position: absolute;
     right: 8px;
     top: 8px;
@@ -181,7 +181,7 @@ body .text{
 }
 
 .modal .fullscreen-modal {
-    color: white;
+    color: black;
     position: absolute;
     left: 8px;
     top: 8px;
@@ -189,7 +189,6 @@ body .text{
 }
 
 /* === MODAL CLOSE.ACTIVE === */
-
 .modal-overlay.active {
     opacity: 1;
     visibility: visible;
@@ -211,4 +210,45 @@ iframe {
     opacity: 1;
     visibility: visible;
     width: 100%;
+}
+
+/* modal page */
+
+
+.modalito{
+    display: flex;
+    position: relative;
+    margin: 0px;
+}
+
+.modalito .card{
+    margin: 0 0 30px;
+    justify-content: center;
+    height:100%;
+    width: 100%;
+}
+
+.modalito .card .card__image-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.modalito .card .card__image-container img{
+    border-radius: 15px;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.modalito .card .card__content{
+    text-align: center;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.modalito .card .card__info{
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
 }
